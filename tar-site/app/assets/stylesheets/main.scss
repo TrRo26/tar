@@ -1,8 +1,24 @@
+$font-stack:    Verdana;
+$cream: #FDF3E7;
+$fire: #C63D0F;
+$charcoal: #3B3738;
+$olive: #7E8F7C;
+
+
 .main {
 	@include outer-container;
-	background-color: #FDF3E7;
+	background-color: $cream;
 }
 
-.nav {
-	
+#nav {
+	background-color: $fire;
+	@include row(table);
 }
+
+#nav-text {
+	font: 120% $font-stack;
+	font-color: $cream;
+	margin: 0 auto;
+}
+
+!!!! LEFT OFF HERE. TO-DO: CENTER AND CHANGE TEXT TO CREAM !!!!
