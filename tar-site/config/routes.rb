@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  resources :blog
+  
+  resources :posts
   resources :projects
 
-  root 'mains#index'
+  root controller: 'main', action: 'index'
 end

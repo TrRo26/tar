@@ -8,15 +8,17 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class='main'>
   	
-  	<h1>Travis A. Roy</h1>
-  	<h2>[ Web Developer ]</h2>
-  	<h3>home | projects | blog</h3>
-  	<%= link_to 'blog', mains/blog %>
+  	<div id='main-nav'>
+  		<h1 id='name-text'>TRAVIS A. ROY</h1>
+  		<h2 id='title-text'>[ WEB DEVELOPER ]</h2>
+
+  		<nav>
+  			<h3 id='nav-text'><%= link_to 'home', root_path %> | <%= link_to 'projects', projects_path %> | <%= link_to 'blog', posts_path %> </h3>
+  		</nav>
+  	</div>
 
     <%= yield %>
   </body>
 </html>
-
-
