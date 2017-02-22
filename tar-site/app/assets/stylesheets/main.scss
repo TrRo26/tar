@@ -22,7 +22,8 @@
 }
 
 #proj-image {
-	background-image: url('./cat-project.jpg')
+	background-image: url('./cat-project.jpg');
+	background-size: contain;
 }
 
 .image { opacity: 0; transition: opacity 0.3s; }
