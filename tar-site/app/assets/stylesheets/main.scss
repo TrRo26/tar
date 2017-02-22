@@ -1,10 +1,13 @@
 
+/*#cateogries {
+	width: 100%;
+}*/
 
 .category {
-	border: 2px solid black;
-	display: inline-block;
+	border: 1px solid black;
+	/*display: inline-block;*/
 	height: 800px;
-	width: 33.06%;
+	width: 33.2%;
 	/*padding: 3px;*/
 	/*margin: 1em;*/
 	float: left;
@@ -17,6 +20,7 @@
 	width: 12%;
 	line-height: 8vh;
 }
+
 
 .image { opacity: 0; transition: opacity 0.3s; }
 
