@@ -1,13 +1,14 @@
 
-/*#cateogries {
-	width: 100%;
-}*/
+#cat-wrapper {
+
+}
 
 .category {
+	position: relative;
 	border: 1px solid black;
-	/*display: inline-block;*/
+	display: table-cell;
 	height: 800px;
-	width: 33.2%;
+	width: calc(33.33% - 2px);
 	/*padding: 3px;*/
 	/*margin: 1em;*/
 	float: left;
@@ -15,7 +16,6 @@
 
 .cat-title {
 	font-size: 10vh;
-	/*border: 1px solid red;*/
 	text-align: center;
 	width: 12%;
 	line-height: 8vh;
