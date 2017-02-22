@@ -9,8 +9,6 @@
 	display: table-cell;
 	height: 800px;
 	width: calc(33.33% - 2px);
-	/*padding: 3px;*/
-	/*margin: 1em;*/
 	float: left;
 }
 
@@ -22,10 +20,15 @@
 }
 
 #proj-image {
-	background-image: url('./cat-project.jpg');
+	background-image: url('./cat_project_bw.jpg');
 	background-size: contain;
+	background-repeat: no-repeat;
 }
 
+
+
+
+/*NOT IN USE*/
 .image { opacity: 0; transition: opacity 0.3s; }
 
 .image-loaded { opacity: 1; }
