@@ -4,12 +4,10 @@ var Blog = React.createClass({
 
 		return (
 			<div>
-				<h1>
-      		<div className='cat-title'>b</div>
-      		<div className='cat-title'>l</div>
-      		<div className='cat-title'>o</div>
-      		<div className='cat-title'>g</div>
-      	</h1>
+    		<div>b</div>
+    		<div>l</div>
+    		<div>o</div>
+    		<div>g</div>
 			</div>
 		)
 	}

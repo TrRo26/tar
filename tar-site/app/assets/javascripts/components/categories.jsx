@@ -7,20 +7,28 @@ var Categories = React.createClass({
     var categoryStyle = {
       position: 'relative',
       border: '1px solid black',
-      // display: 'table-cell',
       height: 800,
       width: 'calc(33.33% - 2px)',
       float: 'left',
       fontSize: 50,
       textAlign: 'center',
       lineHeight: '7vh',
+      backgroundColor: this.props.bgcolor
     }
+
+    // Need to find DRY way of adding individual category css:
+    // var projectImage = {
+    //   backgroundColor: '#FDF3E7',
+    //   // backgroundImage: "url('./cat_project_bw.jpg')",  //find proper syntax for this to work
+    //   backgroundSize: 'contain',
+    //   backgroundRepeat: 'no-repeat'
+    // }
 
     return (
     	<div>
-    		<div style={categoryStyle}>
-    			<About />
-    		</div>
+  			<div style={categoryStyle}>
+  				<About />
+  			</div>
     		<div style={categoryStyle}>
     			<Projects />
     		</div>

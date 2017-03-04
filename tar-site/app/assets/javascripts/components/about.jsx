@@ -4,35 +4,15 @@ var About = React.createClass({
 
     return (
     	<div>
-      	<h1>
-      		<div className='cat-title'>a</div>
-      		<div className='cat-title'>b</div>
-      		<div className='cat-title'>o</div>
-      		<div className='cat-title'>u</div>
-      		<div className='cat-title'>t</div>
-      	</h1>
+    		<div>a</div>
+    		<div>b</div>
+    		<div>o</div>
+    		<div>u</div>
+    		<div>t</div>
       </div>
     )
   }
 });
-
-// Not needed with Rails-React gem:
-// ReactDOM.render(
-//   <About />,
-//   document.getElementById('container')
-// )
-
-
-
-
-
-
-
-// ReactDOM.render(
-//  <Image src='' />,
-//  document.getElementById('app')
-// )
-
 
 
 // Fade in upon image load
