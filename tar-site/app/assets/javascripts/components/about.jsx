@@ -6,7 +6,7 @@ var About = React.createClass({
 
   render: function() {
     return (
-    	<div className='category' onClick=''>
+    	<div onClick=''>
       	<h1>
       		<div className='cat-title'>a</div>
       		<div className='cat-title'>b</div>
@@ -19,11 +19,20 @@ var About = React.createClass({
   }
 });
 
-// CHECK WITH JUSTIN AS TO WHAT ADDONS USED WITH REACT
-// CHECK WITH JUSTIN AS TO WHAT ADDONS USED WITH REACT
-// CHECK WITH JUSTIN AS TO WHAT ADDONS USED WITH REACT
-// CHECK WITH JUSTIN AS TO WHAT ADDONS USED WITH REACT
-// CHECK WITH JUSTIN AS TO WHAT ADDONS USED WITH REACT
+ReactDOM.render(
+  <Categories>
+    <About />
+  </Categories>,
+  document.getElementById('app')
+)
+
+
+
+// ReactDOM.render(
+//  <Image src='' />,
+//  document.getElementById('app')
+// )
+
 
 
 // Fade in upon image load
@@ -56,10 +65,4 @@ var About = React.createClass({
 // 		});
 // 	}
 // });
-
-
-// ReactDOM.render(
-// 	<Image src='' />,
-// 	document.getElementById('app')
-// )
 
