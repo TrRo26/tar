@@ -1,5 +1,3 @@
-var React = require('react')
-var ReactDOM = require('react-dom')
 
 var Projects = React.createClass({
 
@@ -23,7 +21,7 @@ var Projects = React.createClass({
     // var projHide = 'proj-no-image';
 
 		return (
-			<div className='category' onClick={this.handleClick} id={projHideShow}>
+			<div onClick={this.handleClick} id={projHideShow}>
           <h1>
             <div className='cat-title'>p</div>
             <div className='cat-title'>r</div>
@@ -40,10 +38,19 @@ var Projects = React.createClass({
 
 })
 
+// Not needed with Rails:
 // ReactDOM.render(
-//     <Projects />,
+//   <Categories>
+//     <Projects />
+//   </Categories>,
 //     document.getElementById('cat-wrapper')
 // )
+
+
+
+
+
+
 
 // class Button extends React.Component {
 //     constructor(props) {
