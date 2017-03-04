@@ -1,5 +1,5 @@
-var React = React.require('react')
-var ReactDOM = React.require('react-dom')
+var React = require('react')
+var ReactDOM = require('react-dom')
 
 var Projects = React.createClass({
 
