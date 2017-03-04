@@ -1,12 +1,9 @@
 
 var About = React.createClass({
-  // handleClick: function() {
-
-  // }
-
   render: function() {
+
     return (
-    	<div onClick=''>
+    	<div>
       	<h1>
       		<div className='cat-title'>a</div>
       		<div className='cat-title'>b</div>
@@ -19,12 +16,15 @@ var About = React.createClass({
   }
 });
 
-ReactDOM.render(
-  <Categories>
-    <About />
-  </Categories>,
-  document.getElementById('app')
-)
+// Not needed with Rails-React gem:
+// ReactDOM.render(
+//   <About />,
+//   document.getElementById('container')
+// )
+
+
+
+
 
 
 

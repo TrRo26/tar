@@ -1,8 +1,9 @@
 
 var Blog = React.createClass({
 	render: function() {
+
 		return (
-			<div className='category'>
+			<div>
 				<h1>
       		<div className='cat-title'>b</div>
       		<div className='cat-title'>l</div>
