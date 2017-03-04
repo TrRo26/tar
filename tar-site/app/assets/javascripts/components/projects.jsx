@@ -5,33 +5,31 @@ var Projects = React.createClass({
 
   // },
 
-  handleClick: function () {
-    var projHideShow = 'proj-image'
+  // handleClick: function () {
+  //   var projHideShow = 'proj-image'
 
-    if (projHideShow === 'proj-image') {
-      let projHideShow = 'proj-no-image'
-    }
-    // projHideShow == ('proj-image' ? 'proj-no-image' : 'proj-image')
-  },
+  //   if (projHideShow === 'proj-image') {
+  //     let projHideShow = 'proj-no-image'
+  //   }
+  //   // projHideShow == ('proj-image' ? 'proj-no-image' : 'proj-image')
+  // },
 
 	render: function () {
 
-    var projHideShow = 'proj-image'
+    // var projHideShow = 'proj-image'
     // var projShow = 'proj-image';
     // var projHide = 'proj-no-image';
 
 		return (
-			<div onClick={this.handleClick} id={projHideShow}>
-          <h1>
-            <div className='cat-title'>p</div>
-            <div className='cat-title'>r</div>
-            <div className='cat-title'>o</div>
-            <div className='cat-title'>j</div>
-            <div className='cat-title'>e</div>
-            <div className='cat-title'>c</div>
-            <div className='cat-title'>t</div>
-            <div className='cat-title'>s</div>
-          </h1>
+			<div>
+        <div>p</div>
+        <div>r</div>
+        <div>o</div>
+        <div>j</div>
+        <div>e</div>
+        <div>c</div>
+        <div>t</div>
+        <div>s</div>
 			</div>
 		)
 	}
