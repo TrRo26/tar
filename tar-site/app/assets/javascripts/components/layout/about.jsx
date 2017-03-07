@@ -1,6 +1,7 @@
 
 var About = React.createClass({
-  render: function() {
+  
+  render() {
     return (
     	<div>
     		<div>a</div>
@@ -11,7 +12,7 @@ var About = React.createClass({
       </div>
     )
   }
-});
+})
 
 
 // Fade in upon image load
