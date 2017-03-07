@@ -27,7 +27,6 @@ var Categories = React.createClass({
       fontSize: 50,
       textAlign: 'center',
       lineHeight: '7vh',
-      backgroundColor: this.props.bgcolor,
       visibility: this.state.vis
     }
 
@@ -41,7 +40,7 @@ var Categories = React.createClass({
 
     return (
     	<div>
-  			<div style={categoryStyle} onClick={this.handleClick}>
+  			<div onClick={this.handleClick} style={categoryStyle}>
   				<About />
   			</div>
     		<div style={categoryStyle}>

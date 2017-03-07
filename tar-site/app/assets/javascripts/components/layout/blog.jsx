@@ -1,7 +1,7 @@
 
 var Blog = React.createClass({
-	render: function() {
-
+	
+	render() {
 		return (
 			<div>
     		<div>b</div>
@@ -11,4 +11,4 @@ var Blog = React.createClass({
 			</div>
 		)
 	}
-});
+})

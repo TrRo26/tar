@@ -1,25 +1,7 @@
 
 var Projects = React.createClass({
 
-  // getInitialState: function() {
-
-  // },
-
-  // handleClick: function () {
-  //   var projHideShow = 'proj-image'
-
-  //   if (projHideShow === 'proj-image') {
-  //     let projHideShow = 'proj-no-image'
-  //   }
-  //   // projHideShow == ('proj-image' ? 'proj-no-image' : 'proj-image')
-  // },
-
-	render: function () {
-
-    // var projHideShow = 'proj-image'
-    // var projShow = 'proj-image';
-    // var projHide = 'proj-no-image';
-
+	render() {
 		return (
 			<div>
         <div>p</div>
@@ -33,22 +15,7 @@ var Projects = React.createClass({
 			</div>
 		)
 	}
-
 })
-
-// Not needed with Rails:
-// ReactDOM.render(
-//   <Categories>
-//     <Projects />
-//   </Categories>,
-//     document.getElementById('cat-wrapper')
-// )
-
-
-
-
-
-
 
 // class Button extends React.Component {
 //     constructor(props) {
