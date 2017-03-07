@@ -2,7 +2,21 @@
 // With Rails, can use the react_component shortcut - RenderDOM not needed
 
 var Categories = React.createClass({
-	render: function() {
+	
+  getInitialState() {
+    return {
+      vis: 'visible'
+    }
+  },
+
+  handleClick() {
+    var newState = {
+      vis: 'hidden'
+    }
+    this.setState(newState)
+  },
+
+  render() {
     
     var categoryStyle = {
       position: 'relative',
@@ -13,7 +27,8 @@ var Categories = React.createClass({
       fontSize: 50,
       textAlign: 'center',
       lineHeight: '7vh',
-      backgroundColor: this.props.bgcolor
+      backgroundColor: this.props.bgcolor,
+      visibility: this.state.vis
     }
 
     // Need to find DRY way of adding individual category css:
@@ -26,7 +41,7 @@ var Categories = React.createClass({
 
     return (
     	<div>
-  			<div style={categoryStyle}>
+  			<div style={categoryStyle} onClick={this.handleClick}>
   				<About />
   			</div>
     		<div style={categoryStyle}>
