@@ -4,9 +4,14 @@
     <title>Travis A. Roy</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <script src="https://unpkg.com/react-router/umd/ReactRouter.min.js"></script>
+    <%= stylesheet_link_tag    'application', media: 'all' %>  <!-- 'data-turbolinks-track': 'reload' -->
+    <%= javascript_include_tag 'application' %> <!-- 'data-turbolinks-track': 'reload' -->
+   <!--  <script src="https://unpkg.com/react-router/umd/ReactRouter.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/react-router/0.11.6/react-router.js"></script> -->
+
+    <!-- Used for responsive mobile design for bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
   </head>
 
   <body class='main'>
