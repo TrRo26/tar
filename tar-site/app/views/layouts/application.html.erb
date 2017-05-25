@@ -12,16 +12,22 @@
   <body class='container main'>
   	
   	<header class="fixed-top">
-  		<h1 id='name-text'>TRAVIS A. ROY</h1>
-  		<h2 id='title-text'>[ WEB DEVELOPER ]</h2>
+      <div>
+    		<h1 id='name-text'>TRAVIS A. ROY</h1>
+    		<h2 id='title-text'>[ WEB DEVELOPER ]</h2>
+      </div>
+
       <nav>
-        <h3 class="col-md-4 text-center"><%= link_to 'about', root_path %></h3>
-        <h3 class="col-md-4 text-center"><%= link_to 'projects', projects_path %></h3>
-        <h3 class="col-md-4 text-center"><%= link_to 'blog', posts_path %></h3>
+        <ul>
+          <li class="col-md-4 text-center nav-tab"> <%= link_to 'about', root_path %> </li>
+          <li class="col-md-4 text-center nav-tab"> <%= link_to 'projects', projects_path %> </li>
+          <li class="col-md-4 text-center nav-tab"> <%= link_to 'blog', posts_path %> </li>
+        </ul>
       </nav>
+
   	</header>
 
-    <div class="container">
+    <div class="container hook">
       <%= yield %>
     </div>
     
