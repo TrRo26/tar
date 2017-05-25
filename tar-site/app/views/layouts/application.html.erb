@@ -3,25 +3,30 @@
   <head>
     <title>Travis A. Roy</title>
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all' %>  <!-- 'data-turbolinks-track': 'reload' -->
-    <%= javascript_include_tag 'application' %> <!-- 'data-turbolinks-track': 'reload' -->
-   <!--  <script src="https://unpkg.com/react-router/umd/ReactRouter.min.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/react-router/0.11.6/react-router.js"></script> -->
-
+    <%= stylesheet_link_tag 'application', media: 'all' %>  <!-- 'data-turbolinks-track': 'reload' -->
+    <%= javascript_include_tag 'application' %>
     <!-- Used for responsive mobile design for bootstrap -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
   </head>
 
-  <body class='main'>
+  <body class='container main'>
   	
-  	<div id='main-nav'>
+  	<header class="fixed-top">
   		<h1 id='name-text'>TRAVIS A. ROY</h1>
   		<h2 id='title-text'>[ WEB DEVELOPER ]</h2>
-  	</div>
+      <nav>
+        <h3 class="col-md-4 text-center"><%= link_to 'about', root_path %></h3>
+        <h3 class="col-md-4 text-center"><%= link_to 'projects', projects_path %></h3>
+        <h3 class="col-md-4 text-center"><%= link_to 'blog', posts_path %></h3>
+      </nav>
+  	</header>
 
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
     
   </body>
 </html>
+
+
+<!-- %= link_to "about", about_path%> -->

@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   
-  resources :posts
+  resources :about
   resources :projects
+  resources :posts 
 
-  root controller: 'main', action: 'index'
+  root controller: 'about', action: 'index'
 end

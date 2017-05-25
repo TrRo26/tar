@@ -59,7 +59,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # -----------------------
 # gem 'bourbon'
 # gem 'neat', '~> 1.8'
-gem 'react-rails'
 # gem "browserify-rails"
 gem 'bootstrap-sass', '~> 3.3.6'
+gem 'autoprefixer-rails'
 
