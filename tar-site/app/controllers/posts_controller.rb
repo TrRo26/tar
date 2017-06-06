@@ -2,7 +2,12 @@ class PostsController < ApplicationController
 	layout "application"
 	
 	def index
-		render "/layouts/blog"
+		p "POSTS INDEX"
+		p params
+	end
+
+	def show
+
 	end
 
 end
