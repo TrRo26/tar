@@ -16,14 +16,14 @@ $color-olive: #7E8F7C;
 .header {
 	background-color: $color-fire;
 	padding: 10px;
-/*	position: fixed;*/
 	width: 100%;
 	z-index: 99;
 }
 .name-text {
 	font: 600% $font-stack;
+	font-weight: 700;
 	color: $color-charcoal;
-	letter-spacing: 3px;
+	letter-spacing: 8px;
 	text-align: center;
 	margin-top: 15px;
 	margin-bottom: 0px;
@@ -36,12 +36,28 @@ $color-olive: #7E8F7C;
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
-.nav-links {
-	margin-bottom: 0px;
-}
-.nav-tab {
+.nav-links a:link, 
+.nav-links a:hover, 
+.nav-links a:active, 
+.nav-links a:visited {
+	color: $color-cream;
+	text-decoration: none;
 	list-style: none;
 	font-size: 30px;
-	margin-top: 20px;
-	margin-bottom: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px; 
+}
+.nav-links {
+	list-style: none;
+	font-size: 30px;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+.spacer {
+	height: 220px;
+}
+.footer {
+	background: $color-fire;
+	height: 40px;
+	border: 1px solid black;
 }

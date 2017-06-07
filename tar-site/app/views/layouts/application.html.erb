@@ -11,26 +11,31 @@
 
   <body class='container main'>
   	
-  	<header class="navbar-fixed-top container header">
-      <div>
+  	<header class="navbar-fixed-top header">
+      <div class="row">
     		<h1 class='name-text'>TRAVIS A. ROY</h1>
     		<h2 class='title-text'>[ WEB DEVELOPER ]</h2>
       </div>
       <nav class="nav-links">
-        <div>
-          <div class="col-md-4 text-center nav-tab"> <%= link_to 'about', root_path %> </div>
-          <div class="col-md-4 text-center nav-tab"> <%= link_to 'projects', projects_path %> </div>
-          <div class="col-md-4 text-center nav-tab"> <%= link_to 'posts', posts_path %> </div>
+        <div class="container">
+          <div class="col-md-4 text-center"> <%= link_to 'about', root_path %> </div>
+          <div class="col-md-4 text-center"> <%= link_to 'projects', projects_path %> </div>
+          <div class="col-md-4 text-center"> <%= link_to 'posts', posts_path %> </div>
         </div>
       </nav>
-
   	</header>
+
+    <div class="spacer"></div>
 
     <div class="hook">
       <div class="inner-hook">
         <%= yield %>
       </div>
     </div>
+
+    <footer class="footer row">
+      <div></div>
+    </footer>
     
   </body>
 </html>

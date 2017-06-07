@@ -1,9 +1,15 @@
 .about-main {
-	font-family: georgia;
+	font-family: 'Lucida Sans';
+}
+.about-titles {
+	text-transform: uppercase;
+	/*font-variant: small-caps;*/
 }
 /*======================================*/
 .about-me {
 	padding: 30px;
+	font-size: 18px;
+	line-height: 30px;
 }
 /*======================================*/
 .about-exp {
@@ -90,25 +96,3 @@
   text-transform: uppercase;
   margin-top: 30px;
 }
-/*.xcontainer {
-  border: 1px solid black;
-  margin: 1%;
-  margin-left: 5%;
-  margin-right: 5%;
-  padding: 10px;
-}
-.hiddenContainer {
-	margin: 1%;
-  margin-left: 2%;
-  margin-right: 2%;
-  padding: 10px;
-}
-.skillBar {
-	color: white;
-	margin-left: 10px;
-}
-.skillStyle {
-	margin: 0 0 30px 0;
-  padding: 0;
-  width: calc(100% - 50px);
-}*/
