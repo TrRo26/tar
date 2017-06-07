@@ -1,5 +1,33 @@
+@font-face {
+  font-family: 'Nord Medium';
+  src: url("/assets/NordMedium.ttf") format("truetype");
+}
+
+$font-stack: Nord Medium;
+$color-cream: #FDF3E7;
+$color-fire: #C63D0F;
+$color-charcoal: #3B3738;
+$color-olive: #7E8F7C;
+
+/*======================================*/
 .about-me {
-/*	position: relative;
-	left: 100px;*/
-	border: 3px solid black;
+	padding: 30px;
+}
+/*======================================*/
+.about-exp {
+	padding: 30px;
+}
+.exp-img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	padding: 10px;
+}
+/*======================================*/
+.about-edu {
+	padding: 30px;
+}
+/*======================================*/
+.about-skills {
+	padding: 30px;
 }
