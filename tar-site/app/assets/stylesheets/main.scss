@@ -12,15 +12,15 @@ $color-olive: #7E8F7C;
 .main {
 	border: 1px solid black;
 	background-color: $color-cream;
-	font: $font-stack;
 }
-
-#main-nav {
+.header {
 	background-color: $color-fire;
 	padding: 10px;
+/*	position: fixed;*/
+	width: 100%;
+	z-index: 99;
 }
-
-#name-text {
+.name-text {
 	font: 600% $font-stack;
 	color: $color-charcoal;
 	letter-spacing: 3px;
@@ -28,18 +28,20 @@ $color-olive: #7E8F7C;
 	margin-top: 15px;
 	margin-bottom: 0px;
 }
-
-#title-text {
+.title-text {
 	font: 300% $font-stack;
 	color: $color-charcoal;
 	letter-spacing: 2px;
 	text-align: center;
 	margin-top: 0px;
+	margin-bottom: 0px;
 }
-
-li.nav-tab {
+.nav-links {
+	margin-bottom: 0px;
+}
+.nav-tab {
 	list-style: none;
 	font-size: 30px;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
