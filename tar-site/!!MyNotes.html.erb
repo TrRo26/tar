@@ -1,0 +1,19 @@
+FOR ASYNC CALLS:
+
+	---> index.js.erb
+		$('.inner-hook').replaceWith('<%= j(render partial: 'index') %>')
+
+	---> _index.html.erb
+		Partial that you want rendered
+
+	---> application.html.erb
+		'remote: true' added to end of link_to, form_for etc.
+		<div class="container hook">
+      <div class="inner-hook">
+        <%= yield %>
+      </div>
+    </div>
+
+	---> [controller]
+		Method action that matches view name
+
