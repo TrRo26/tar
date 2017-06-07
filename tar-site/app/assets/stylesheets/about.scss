@@ -1,14 +1,6 @@
-@font-face {
-  font-family: 'Nord Medium';
-  src: url("/assets/NordMedium.ttf") format("truetype");
+.about-main {
+	font-family: georgia;
 }
-
-$font-stack: Nord Medium;
-$color-cream: #FDF3E7;
-$color-fire: #C63D0F;
-$color-charcoal: #3B3738;
-$color-olive: #7E8F7C;
-
 /*======================================*/
 .about-me {
 	padding: 30px;
@@ -31,3 +23,92 @@ $color-olive: #7E8F7C;
 .about-skills {
 	padding: 30px;
 }
+.skillbar {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.skillbar-bar:before {
+  background: #eee;
+  content: "";
+  height: 5px;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.skillbar-bar {
+  height: 5px;
+  width: 0px;
+  background: $color-fire;
+  transition-property: width, background-color;
+}
+.skillbar-title {
+  color: #323232;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.skill-bar-percent {
+  float: right;
+  display: inline-block;
+  color: #323232;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.skillbar-bar-main:before {
+  background: #eee;
+  content: "";
+  height: 10px;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.skillbar-bar-main {
+  height: 10px;
+  width: 0px;
+  background: $color-fire;
+  transition-property: width, background-color;
+}
+.skillbar-title-main {
+  color: #323232;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 30px;
+}
+.skill-bar-percent-main {
+  float: right;
+  display: inline-block;
+  color: #323232;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+/*.xcontainer {
+  border: 1px solid black;
+  margin: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 10px;
+}
+.hiddenContainer {
+	margin: 1%;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 10px;
+}
+.skillBar {
+	color: white;
+	margin-left: 10px;
+}
+.skillStyle {
+	margin: 0 0 30px 0;
+  padding: 0;
+  width: calc(100% - 50px);
+}*/

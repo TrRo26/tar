@@ -1,4 +1,4 @@
-<div class="about-main">
+<div class='about-main'>
 
 	<!-- ==================
 	     ABOUT ME
@@ -18,11 +18,11 @@
 	     ================== -->
 	<div class='about-exp row'>
 		<h1>EXPERIENCE</h1>
-		<div class="row">
+		<div class='row'>
 			<%= image_tag("about/nw_seal.png", class: 'exp-img col-md-1') %>
 			<p>Northwestern University Coding Bootcamp</p>
 		</div>
-		<div class="row">
+		<div class='row'>
 			<%= image_tag("about/dbc_logo.jpeg", class: 'exp-img col-md-1') %>
 			<p>Dev Bootcamp</p>
 		</div>
@@ -36,7 +36,7 @@
 	<!-- ==================
 	     EDUCATION
 	     ================== -->
-	<div class="about-edu row">
+	<div class='about-edu row'>
 		<h1>EDUCATION</h1>
 		<div class='devBootcamp row'>
 			<%= image_tag("about/dbc_logo.jpeg", class: 'exp-img col-md-1') %>
@@ -58,108 +58,86 @@
 	<!-- ==================
 	     SKILLS
 	     ================== -->
-	<div class="about-skills row">
+	<div class='about-skills row'>
 		<h1>SKILLS</h1>
-		<div id='languages' style={hiddenContainer}>
-			<h3>Languages</h3>						
-			<ul className="skillStyle">
-				{this.getLanguageSkills().map((skill, index) => 
-				<div key={skill.type} style={ {
-	        width: skill.level + '%',
-	        backgroundColor: 'hsl(' + this.props.hue + ', ' + this.props.saturation + '%, ' + this.setShade({ index }) + '%)'
-	      	} }>
-	  			<p style={skillBar}>{skill.type}</p>
-				</div>
-				)}
-			</ul>
-		</div>
+	  <div class="row">
+	    <div class="col-md-12">
+	      <div class="skillbar" data-percent="50%">
+	        <div class="skillbar-title-main">JavaScript</div>
+	        <div class="skill-bar-percent-main">50%</div>
+	        <div class="skillbar-bar-main" style="width: 50%;"></div>
+	      </div>
 
-		<div id='frameworks' style={hiddenContainer}>
-			<h3>Frameworks/Libraries</h3>
-			<ul className="skillStyle">
-				{this.getFrameworkSkills().map((skill, index) => 
-				<div key={skill.type} style={ {
-	        width: skill.level + '%',
-	        backgroundColor: 'hsl(' + this.props.hue + ', ' + this.props.saturation + '%, ' + this.setShade({ index }) + '%)'
-	      	} }>
-	  			<p style={skillBar}>{skill.type}</p>
-				</div>
-				)}
-			</ul>
-		</div>
+	      <div class="skillbar" data-percent="30%">
+	        <div class="skillbar-title">JQuery</div>
+	        <div class="skill-bar-percent">30%</div>
+	        <div class="skillbar-bar" style="width: 30%;"></div>
+	      </div>
 
-		<div id='everythingElse' style={hiddenContainer}>
-			<h3>Everything else</h3>
-			<ul className="skillStyle">
-				{this.getEverythingElseSkills().map((skill, index) => 
-				<div key={skill.type} style={ {
-	        width: skill.level + '%',
-	        backgroundColor: 'hsl(' + this.props.hue + ', ' + this.props.saturation + '%, ' + this.setShade({ index }) + '%)'
-	      	} }>
-	  			<p style={skillBar}>{skill.type}</p>
-				</div>
-				)}
-			</ul>
-		</div>
+	      <div class="skillbar" data-percent="30%">
+	        <div class="skillbar-title">React</div>
+	        <div class="skill-bar-percent">30%</div>
+	        <div class="skillbar-bar" style="width: 30%;"></div>
+	      </div>
 
+	      <div class="skillbar" data-percent="25%">
+	        <div class="skillbar-title">Jasmine</div>
+	        <div class="skill-bar-percent">25%</div>
+	        <div class="skillbar-bar" style="width: 25%;"></div>
+	      </div>
+
+	      <div class="skillbar" data-percent="50%">
+	        <div class="skillbar-title-main">Ruby</div>
+	        <div class="skill-bar-percent-main">50%</div>
+	        <div class="skillbar-bar-main" style="width: 50%;"></div>
+	      </div>
+
+	      <div class="skillbar" data-percent="30%">
+	        <div class="skillbar-title">Rails</div>
+	        <div class="skill-bar-percent">30%</div>
+	        <div class="skillbar-bar" style="width: 30%;"></div>
+	      </div>
+
+	      <div class="skillbar" data-percent="70%">
+	        <div class="skillbar-title">Sinatra</div>
+	        <div class="skill-bar-percent">70%</div>
+	        <div class="skillbar-bar" style="width: 70%;"></div>
+	      </div>
+
+	      <div class="skillbar" data-percent="45%">
+	        <div class="skillbar-title">RSpec</div>
+	        <div class="skill-bar-percent">45%</div>
+	        <div class="skillbar-bar" style="width: 45%;"></div>
+	      </div>
+
+	      <div class="skillbar" data-percent="15%">
+	        <div class="skillbar-title-main">Swift</div>
+	        <div class="skill-bar-percent-main">15%</div>
+	        <div class="skillbar-bar-main" style="width: 15%;"></div>
+	      </div>
+
+	      <div class="skillbar" data-percent="15%">
+	        <div class="skillbar-title">Xcode</div>
+	        <div class="skill-bar-percent">15%</div>
+	        <div class="skillbar-bar" style="width: 15%;"></div>
+	      </div>
+
+	      <div class="skillbar" data-percent="80%">
+	        <div class="skillbar-title-main">HTML</div>
+	        <div class="skill-bar-percent-main">80%</div>
+	        <div class="skillbar-bar-main" style="width: 80%;"></div>
+	      </div>
+
+	      <div class="skillbar" data-percent="50%">
+	        <div class="skillbar-title-main">CSS</div>
+	        <div class="skill-bar-percent-main">50%</div>
+	        <div class="skillbar-bar-main" style="width: 50%;"></div>
+	      </div>
+	    </div>
+	  </div>
+	  <div>
+			Also familiar with: MySQL, PostreSQL, JSON, AJAX, Agile
+		</div>
 	</div>
 
 </div>
-
-
-<!--
-
-languageSkills: [
-	        {type: "JavaScript", level: 50},
-	        {type: "Ruby", level: 50},
-	        {type: "Swift", level: 15}
-      	],
-      	frameworkSkills: [
-      		{type: "React", level: 30},
-      		{type: "JQuery", level: 30},
-      		{type: "Rails", level: 20},
-      		{type: "Sinatra", level: 70},
-      		{type: "Xcode", level: 15},
-      	],
-      	everythingElseSkills: [
-      		{type: "MySQL", level: 50},
-      		{type: "PostgreSQL", level: 50},
-      		{type: "HTML", level: 80},
-      		{type: "CSS", level: 40},
-      		{type: "RSpec", level: 50},
-      		{type: "Jasmine", level: 30},
-      		{type: "JSON", level: 50},
-      		{type: "AJAX", level: 50},
-      		{type: "Agile", level: 25},
-      	]
-
-
-      	setShade(input) {
-    return 100 / (input.index + 3.5) ;
-  },
-
-
-  var container = {
-      border: '1px solid black',
-      margin: '1%',
-      marginLeft: '5%',
-      marginRight: '5%',
-      padding: '10px'
-    }
-    var hiddenContainer = {
-    	margin: '1%',
-      marginLeft: '2%',
-      marginRight: '2%',
-      padding: '10px'
-    }
-    var skillBar = {
-    	color: 'white',
-    	marginLeft: '10px'
-    }
-    var skillStyle = {
-  		margin: '0 0 30px 0',
-		  padding: 0,
-		  width: 'calc(100% - 50px)'
-  	}	 -->
-
-

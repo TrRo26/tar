@@ -11,18 +11,17 @@
 
   <body class='container main'>
   	
-  	<header class="fixed-top row">
+  	<header class="navbar-fixed-top container header">
       <div>
-    		<h1 id='name-text'>TRAVIS A. ROY</h1>
-    		<h2 id='title-text'>[ WEB DEVELOPER ]</h2>
+    		<h1 class='name-text'>TRAVIS A. ROY</h1>
+    		<h2 class='title-text'>[ WEB DEVELOPER ]</h2>
       </div>
-
-      <nav>
-        <ul>
-          <li class="col-md-4 text-center nav-tab"> <%= link_to 'about', root_path %> </li>
-          <li class="col-md-4 text-center nav-tab"> <%= link_to 'projects', projects_path %> </li>
-          <li class="col-md-4 text-center nav-tab"> <%= link_to 'posts', posts_path %> </li>
-        </ul>
+      <nav class="nav-links">
+        <div>
+          <div class="col-md-4 text-center nav-tab"> <%= link_to 'about', root_path %> </div>
+          <div class="col-md-4 text-center nav-tab"> <%= link_to 'projects', projects_path %> </div>
+          <div class="col-md-4 text-center nav-tab"> <%= link_to 'posts', posts_path %> </div>
+        </div>
       </nav>
 
   	</header>
