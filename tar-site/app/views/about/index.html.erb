@@ -1,0 +1,155 @@
+<div class="about-main container">
+
+	<!-- ==================
+	     ABOUT ME
+	     ================== -->
+	<div class='about-me row'>
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<h1> A LITTLE BIT ABOUT ME</h1>
+			<p>As a result of several years of intense interest in the field of web development and a strong desire to build and create, I recently attended and graduated from the fully immersive web development program at DevBootcamp in Chicago. Working and studying approximately 60 hours per week, I had the opportunity to build numerous programs utilizing Ruby, Rails, HTML, CSS, JavaScript, JQuery, Sinatra, Xcode, Swift, SQL, and many other development tools.</p>
+			<p>In addition to my current studies at DevBootcamp, I have recently earned a Master's of Science in International and Comparative Education as a result of my intense interest in culture, all things international and, of course, education. I am highly organized and pride myself on the ability to do just about anything and do it well.</p>
+			<p>My past work with CCI Greenheart in the student exchange industry has provided me with invaluable people skills through day-to-day dealings with a multitude of international and domestic partners, employers and students alike. My formal education has afforded me valuable project management skills, an independent work ethic and an acute understanding of educational design and learning techniques.</p>
+			<p>I have also been lucky enough to have had the chance to spend nearly half a year traveling throughout Western and Eastern Europe, a year and a half working and traveling in Australia and New Zealand, and two years studying and working in Sweden for graduate school. I am absolutely fascinated by different cultures and strongly believe that experiencing the differences those cultures have to offer is essential to a healthy perspective in todays world.</p>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+
+	<!-- ==================
+	     EXPERIENCE
+	     ================== -->
+	<div class='experience row'>
+		<h1>EXPERIENCE</h1>
+		<p>Northwestern University Coding Bootcamp</p>
+		<p>Dev Bootcamp</p>
+		<p>CCI Greenheart</p>
+		<p>For more details on previous experience, please feel free to take a look at my LinkedIn profile: https://www.linkedin.com/in/travisroy/</p>
+	</div>
+
+	<!-- ==================
+	     EDUCATION
+	     ================== -->
+	<div class="education row">
+		<h1>EDUCATION</h1>
+		<div id='devBootcamp'>
+			<h3>Dev Bootcamp Graduate</h3>
+			<h4>Dev Bootcamp - Chicago, Illinois</h4>
+		</div>
+		<div id='stockholmUniversity'>
+			<h3>Master of Science in International and Comparative Education</h3>
+			<h4>Stockholm University - Stockholm, Sweden</h4>
+		</div>
+		<div id='michiganStateUniversity'>
+			<h3>Bachelor of Arts in Hospitality Business</h3>
+			<h4>Michigan State University - East Lansing, Michigan</h4>
+		</div>
+	</div>
+
+	<!-- ==================
+	     SKILLS
+	     ================== -->
+	<div class="skills row">
+		<h1>SKILLS</h1>
+		<div id='languages' style={hiddenContainer}>
+			<h3>Languages</h3>						
+			<ul className="skillStyle">
+				{this.getLanguageSkills().map((skill, index) => 
+				<div key={skill.type} style={ {
+	        width: skill.level + '%',
+	        backgroundColor: 'hsl(' + this.props.hue + ', ' + this.props.saturation + '%, ' + this.setShade({ index }) + '%)'
+	      	} }>
+	  			<p style={skillBar}>{skill.type}</p>
+				</div>
+				)}
+			</ul>
+		</div>
+
+		<div id='frameworks' style={hiddenContainer}>
+			<h3>Frameworks/Libraries</h3>
+			<ul className="skillStyle">
+				{this.getFrameworkSkills().map((skill, index) => 
+				<div key={skill.type} style={ {
+	        width: skill.level + '%',
+	        backgroundColor: 'hsl(' + this.props.hue + ', ' + this.props.saturation + '%, ' + this.setShade({ index }) + '%)'
+	      	} }>
+	  			<p style={skillBar}>{skill.type}</p>
+				</div>
+				)}
+			</ul>
+		</div>
+
+		<div id='everythingElse' style={hiddenContainer}>
+			<h3>Everything else</h3>
+			<ul className="skillStyle">
+				{this.getEverythingElseSkills().map((skill, index) => 
+				<div key={skill.type} style={ {
+	        width: skill.level + '%',
+	        backgroundColor: 'hsl(' + this.props.hue + ', ' + this.props.saturation + '%, ' + this.setShade({ index }) + '%)'
+	      	} }>
+	  			<p style={skillBar}>{skill.type}</p>
+				</div>
+				)}
+			</ul>
+		</div>
+
+	</div>
+
+</div>
+
+
+<!--
+
+languageSkills: [
+	        {type: "JavaScript", level: 50},
+	        {type: "Ruby", level: 50},
+	        {type: "Swift", level: 15}
+      	],
+      	frameworkSkills: [
+      		{type: "React", level: 30},
+      		{type: "JQuery", level: 30},
+      		{type: "Rails", level: 20},
+      		{type: "Sinatra", level: 70},
+      		{type: "Xcode", level: 15},
+      	],
+      	everythingElseSkills: [
+      		{type: "MySQL", level: 50},
+      		{type: "PostgreSQL", level: 50},
+      		{type: "HTML", level: 80},
+      		{type: "CSS", level: 40},
+      		{type: "RSpec", level: 50},
+      		{type: "Jasmine", level: 30},
+      		{type: "JSON", level: 50},
+      		{type: "AJAX", level: 50},
+      		{type: "Agile", level: 25},
+      	]
+
+
+      	setShade(input) {
+    return 100 / (input.index + 3.5) ;
+  },
+
+
+  var container = {
+      border: '1px solid black',
+      margin: '1%',
+      marginLeft: '5%',
+      marginRight: '5%',
+      padding: '10px'
+    }
+    var hiddenContainer = {
+    	margin: '1%',
+      marginLeft: '2%',
+      marginRight: '2%',
+      padding: '10px'
+    }
+    var skillBar = {
+    	color: 'white',
+    	marginLeft: '10px'
+    }
+    var skillStyle = {
+  		margin: '0 0 30px 0',
+		  padding: 0,
+		  width: 'calc(100% - 50px)'
+  	}	 -->
+
+
