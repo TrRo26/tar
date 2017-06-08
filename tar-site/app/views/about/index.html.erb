@@ -84,8 +84,6 @@
 				<div class="col-md-1"></div>
 			</div>
 
-			<div class="exp-for-details nav-links">For more details on previous experience: <%= link_to 'linkedin.com/in/travisroy', "https://www.linkedin.com/in/travisroy/", target: :_blank %></div>
-
 		</div>
 		<div class="col-md-1"></div>
 	</div>
@@ -223,6 +221,31 @@
 
 	    </div>
 		<div class="col-md-1"></div>
+	</div>
+
+	<!-- ==================
+	     MORE DETAILS
+	     ================== -->
+	<div class='about-details'>
+		
+			<div>
+				<%= link_to "https://www.linkedin.com/in/travisroy/", target: :_blank do %>
+   				<%= image_tag("about/linkedin_icon.png", class: 'details-img') %>
+				<% end %>
+			</div>
+
+			<div>
+				<%= link_to "https://github.com/TrRo26/", target: :_blank do %>
+   				<%= image_tag("about/github_icon.png", class: 'details-img') %>
+				<% end %>
+			</div>
+
+			<div>
+				<%= mail_to "travis.roy26@gmail.com" do %>
+   				<%= image_tag("about/email_icon.png", class: 'details-img') %>
+				<% end %>
+			</div>
+
 	</div>
 
 
