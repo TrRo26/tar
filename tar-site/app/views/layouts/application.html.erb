@@ -9,8 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
-  <body class='container main'>
+  <body class='main'>
   	
+    <%= image_tag("about/lofoten_2.jpg", class: 'header-img') %>
+    
   	<header class="navbar-fixed-top header">
       <div class="row">
     		<h1 class='name-text'>TRAVIS A. ROY</h1>
@@ -27,14 +29,14 @@
 
     <div class="spacer"></div>
 
-    <div class="hook">
+    <div class="container">
       <div class="inner-hook">
         <%= yield %>
       </div>
     </div>
 
-    <footer class="footer row">
-      <div></div>
+    <footer class="footer">
+      <div class="footer-content">© 2017 Travis Roy</div>
     </footer>
     
   </body>

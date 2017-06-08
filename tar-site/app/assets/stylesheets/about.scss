@@ -4,6 +4,10 @@
 .about-titles {
 	text-transform: uppercase;
 	/*font-variant: small-caps;*/
+	background: $color-olive;
+	padding: 10px;
+	color: $color-cream;
+	border-radius: 5px;
 }
 /*======================================*/
 .about-me {
@@ -42,12 +46,14 @@
   position: absolute;
   width: 100%;
   z-index: -1;
+  margin-left: 10px;
 }
 .skillbar-bar {
   height: 5px;
   width: 0px;
   background: $color-fire;
   transition-property: width, background-color;
+  margin-left: 10px;
 }
 .skillbar-title {
   color: #323232;
@@ -55,6 +61,7 @@
   font-weight: 600;
   text-transform: uppercase;
   display: inline-block;
+  margin-left: 10px;
 }
 .skill-bar-percent {
   float: right;
