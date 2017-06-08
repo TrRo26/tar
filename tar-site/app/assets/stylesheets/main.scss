@@ -85,10 +85,15 @@ $color-olive: #7E8F7C;
 }
 .footer {
 	background: $color-charcoal;
-	height: 60px;
+	height: 80px;
 }
-.footer-content {
-	text-align: center;
-	padding: 20px;
+.footer-info {
+	text-align: right;
+	padding: 30px;
+	color: $color-cream;
+}
+.footer-tech {
+	text-align: left;
+	padding: 30px;
 	color: $color-cream;
 }
