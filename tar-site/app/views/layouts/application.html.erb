@@ -10,21 +10,22 @@
   </head>
 
   <body class='main'>
-  	
-    <%= image_tag("about/lofoten_2.jpg", class: 'header-img') %>
-    
+
   	<header class="navbar-fixed-top header">
-      <div class="row">
-    		<h1 class='name-text'>TRAVIS A. ROY</h1>
-    		<h2 class='title-text'>[ WEB DEVELOPER ]</h2>
-      </div>
-      <nav class="nav-links">
-        <div class="container">
-          <div class="col-md-4 text-center"> <%= link_to 'about', root_path %> </div>
-          <div class="col-md-4 text-center"> <%= link_to 'projects', projects_path %> </div>
-          <div class="col-md-4 text-center"> <%= link_to 'posts', posts_path %> </div>
+      <div class="wrapper overlay">
+        <%= image_tag("about/lofoten_2.jpg", class: 'header-img') %>
+        <div class="row">
+      		<h1 class='name-text'>TRAVIS A. ROY</h1>
+      		<h2 class='title-text'>[ WEB DEVELOPER ]</h2>
         </div>
-      </nav>
+        <nav class="nav-links">
+          <div class="container">
+            <div class="col-md-4 text-center"> <%= link_to 'about', root_path, class: 'nav-box' %> </div>
+            <div class="col-md-4 text-center"> <%= link_to 'projects', projects_path, class: 'nav-box' %> </div>
+            <div class="col-md-4 text-center"> <%= link_to 'posts', posts_path, class: 'nav-box' %> </div>
+          </div>
+        </nav>
+      </div>  
   	</header>
 
     <div class="spacer"></div>
