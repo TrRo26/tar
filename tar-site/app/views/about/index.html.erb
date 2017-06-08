@@ -7,7 +7,6 @@
 		<div>
 			<div class="col-md-1"></div>
 			<div class="col-md-10">
-				<h1 class="about-titles"></h1>
 				<p>As a result of several years of intense interest in the field of web development and a strong desire to build and create, I recently attended and graduated from the fully immersive web development program at DevBootcamp in Chicago. Working and studying approximately 60 hours per week, I had the opportunity to build numerous programs utilizing Ruby, Rails, HTML, CSS, JavaScript, JQuery, Sinatra, Xcode, Swift, SQL, and many other development tools.</p>
 				<p>In addition to my current studies at DevBootcamp, I have recently earned a Master's of Science in International and Comparative Education as a result of my intense interest in culture, all things international and, of course, education. I am highly organized and pride myself on the ability to do just about anything and do it well.</p>
 				<p>My past work with CCI Greenheart in the student exchange industry has provided me with invaluable people skills through day-to-day dealings with a multitude of international and domestic partners, employers and students alike. My formal education has afforded me valuable project management skills, an independent work ethic and an acute understanding of educational design and learning techniques.</p>
@@ -24,19 +23,69 @@
 		<div class="col-md-1"></div>
 		<div class="col-md-10">
 			<h1 class="about-titles">Experience</h1>
+			
 			<div class='row'>
-				<%= image_tag("about/nw_seal.png", class: 'exp-img col-md-1') %>
-				<h2>Northwestern University Coding Bootcamp / Trilogy Education Services</h2>
+				<div class="col-md-1"></div>
+				<%= image_tag("about/nw_seal.png", class: 'exp-img col-md-2') %>
+				<div class="col-md-8">
+					<h2 class="exp-titles">Northwestern Coding Bootcamp / <br>Trilogy Education Services</h2>
+					<h2 class="exp-locations">Chicago, IL</h2>
+					<div></div>
+					<div class="exp-positions">Teaching Assistant</div>
+					<span class="exp-dates">Apr 2017 - Present</span>
+					<div class="exp-content">
+						A part-time, 6 month programing bootcamp where "students will learn a full-stack, including the skills needed to become proficient in front- and backend developers- HTML, CSS, JavaScript, jQuery, Boostrap, React.js, Node.js, Database Theory, Bookshelf.js, MongoDB, MySQL, Command Line, Git, Python, and more"
+					</div>
+				</div>
+				<div class="col-md-1"></div>
 			</div>
+
 			<div class='row'>
-				<%= image_tag("about/dbc_logo.jpeg", class: 'exp-img col-md-1') %>
-				<h2>Dev Bootcamp</h2>
+				<div class="col-md-1"></div>
+				<%= image_tag("about/dbc_logo.jpeg", class: 'exp-img col-md-2') %>
+				<div class="col-md-8">
+					<h2 class="exp-titles">Dev Bootcamp</h2>
+					<h2 class="exp-locations">Chicago, IL</h2>
+					<div></div>
+					<div class="exp-positions">Student</div>
+					<span class="exp-dates">Jun 2016 to Dec 2016</span>
+					<div class="exp-content">
+						<p>Successfully absorbed and applied numerous new technologies in an extremely limited period of time while retaining an appropriate level of sanity</p>
+						<p>Participated in multiple group projects with a unique and useful perspective while also helping to maintain a positive and productive team dynamic</p>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
 			</div>
+
 			<div class='row'>
-				<%= image_tag("about/cci_logo.png", class: 'exp-img col-md-1') %>
-				<h2>CCI Greenheart</h2>
+				<div class="col-md-1"></div>
+				<%= image_tag("about/cci_logo.png", class: 'exp-img col-md-2') %>
+				<div class="col-md-8">
+					<h2 class="exp-titles">CCI Greenheart</h2>
+					<h2 class="exp-locations">Chicago, IL</h2>
+					<div></div>
+					<div class="exp-positions">Operations Manager</div>
+					<span class="exp-dates">Feb 2016 to Jun 2016</span>
+					<div></div>
+					<div class="exp-positions">Program Coordinator</div>
+					<span class="exp-dates">Dec 2014 to Feb 2016</span>
+					<div></div>
+					<div class="exp-positions">Programs Associate</div>
+					<span class="exp-dates">Aug 2011 to Dec 2014</span>
+					<div class="exp-content">
+						<p>Oversaw and managed staff while exceeding all 2016 benchmarking goals</p>
+						<p>Acted as point person for departmental transition to new online system</p>
+						<p>Coordinated numerous aspects of the J1 Visa Exchange Visitor Program while facilitating growth within both the Work and Travel Program and Career Advancement Program</p>
+						<p>Managed a caseload of 1,000+ international students through diligent supervision and guidance to ensure the successful and safe completion of their program in the U.S.</p>
+						<p>Initiated and led the implementation of a reflective seasonal analysis in order to streamline and drive future growth</p>
+						<p>Achieved a 100% fill rate of available positions through the successful selection, interviewing and hiring of viable participants</p>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
 			</div>
-			<p>For more details on previous experience, please feel free to take a look at my LinkedIn profile: https://www.linkedin.com/in/travisroy/</p>
+
+			<div class="exp-for-details nav-links">For more details on previous experience: <%= link_to 'linkedin.com/in/travisroy', "https://www.linkedin.com/in/travisroy/", target: :_blank %></div>
+
 		</div>
 		<div class="col-md-1"></div>
 	</div>
@@ -48,21 +97,25 @@
 		<div class="col-md-1"></div>
 		<div class="col-md-10">
 			<h1 class="about-titles">Education</h1>
+
 			<div class='devBootcamp row'>
 				<%= image_tag("about/dbc_logo.jpeg", class: 'exp-img col-md-1') %>
 				<p>Dev Bootcamp Graduate</p>
 				<p>Dev Bootcamp - Chicago, Illinois</p>
 			</div>
+
 			<div class='stockholmUniversity row'>
 				<%= image_tag("about/su_seal.png", class: 'exp-img col-md-1') %>
 				<p>Master of Science in International and Comparative Education</p>
 				<p>Stockholm University - Stockholm, Sweden</p>
 			</div>
+
 			<div class='michiganStateUniversity row'>
 				<%= image_tag("about/msu_seal.png", class: 'exp-img col-md-1') %>
 				<p>Bachelor of Arts in Hospitality Business</p>
 				<p>Michigan State University - East Lansing, Michigan</p>
 			</div>
+
 		</div>
 		<div class="col-md-1"></div>
 	</div>
@@ -81,10 +134,10 @@
 	        <div class="skillbar-bar-main" style="width: 50%;"></div>
 	      </div>
 
-	      <div class="skillbar" data-percent="30%">
+	      <div class="skillbar" data-percent="40%">
 	        <div class="skillbar-title">JQuery</div>
-	        <div class="skill-bar-percent">30%</div>
-	        <div class="skillbar-bar" style="width: 30%;"></div>
+	        <div class="skill-bar-percent">40%</div>
+	        <div class="skillbar-bar" style="width: 40%;"></div>
 	      </div>
 
 	      <div class="skillbar" data-percent="30%">
@@ -148,8 +201,26 @@
 	      </div>
 
 	      <div>
-					Also familiar with: MySQL, PostreSQL, JSON, AJAX, XML, Agile, Bootstrap
+	      	<div class="skillbar-title-main">Additional Skills:</div>
+					<div class="add-skills">
+						<div class="col-md-4">
+								<div>MySQL</div>
+								<div>PostreSQL</div>
+								<div>Bootstrap</div>
+						</div>
+						<div class="col-md-4">
+							<div>AJAX</div>
+							<div>JSON</div>
+							<div>XML</div>
+						</div>
+						<div class="col-md-4">
+							<div>Agile</div>
+							<div>Management</div>
+							<div>Organization</div>
+						</div>
+					</div>
 				</div>
+
 	    </div>
 		<div class="col-md-1"></div>
 	</div>
