@@ -1,0 +1,57 @@
+.projects-main {
+	font-family: 'Lucida Sans';
+	color: $color-charcoal;
+	font-size: 16px;
+}
+/*.projects-title {
+	position: absolute;
+	top: 175px;
+	left: 136px;
+	transform: rotate(45deg);
+	color: $color-fire;
+	letter-spacing: 5px;
+}*/
+.project-labels {
+	font-weight: bold;
+}
+/*======================================*/
+/*REMIND*/
+/*======================================*/
+.remind-img-container {
+	height: 450px;
+	width: 450px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.remind-img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.remind-content {
+	margin-top: 22px;
+}
+.remind {
+	color: $color-fire;
+}
+/*======================================*/
+/*BATTLESHIP*/
+/*======================================*/
+.battleship-img-container {
+	height: 450px;
+	width: 450px;
+	margin-top: -10px;
+	margin-bottom: 30px;
+	/*border: 1px solid black;*/
+}
+.battleship-img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.battleship-content {
+	margin-top: 50px;
+}
+.battleship {
+	color: $color-fire;
+}

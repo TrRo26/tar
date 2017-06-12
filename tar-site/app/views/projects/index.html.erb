@@ -1,5 +1,64 @@
-<div class="projects">
-	<div>
-		<h1>PROJECTS</h1>
+<div class="projects-main">
+
+	<!-- ==================
+   REMIND
+   ================== -->
+	<div class='row'>
+		<div class="col-md-1"></div>
+
+		<div class="col-md-5">
+			<div class="remind-img-container">
+				<!-- <h1 class="projects-title">PROJECTS</h1> -->
+				<%= image_tag("projects/cat_project_bw_no_bg.png", class: 'remind-img') %>
+			</div>
+		</div>
+
+		<div class="col-md-5 remind-content">
+			<h2 class="remind">Remind</h2>
+			<h4>[ 7 days | Team of 4 ]</h4>
+			<p>'Remind' is an iOS app that triggers push notifications based on a users proximity to items entered on a personal, customizable list. Using a Ruby on Rails back end to manage user authentication and storage of list items and Xcode and Swift to design a sleek user experience, this fully functional app was engineered for anyone who's forgotten to grab that gallon of milk, role of duct tape or bouquet of flowers on their way home from work.</p>
+			<p><span class="project-labels">Personal focus:</span> Gaining foundational knowledge of Swift/Xcode in order to implement Core Motion Framework<p>
+			<p><span class="project-labels">Tech:</span> Ruby, Rails, Swift, Xcode, Google Maps API, Heroku</p>
+			<div>
+				<%= link_to "Remind Rails Repo", "https://github.com/TrRo26/remind_rails", target: :_blank %>
+			</div>
+			<div>
+				<%= link_to "Remind Xcode/Swift Repo", "https://github.com/TrRo26/remind_xcode", target: :_blank %>
+			</div>
+		</div>
+
+		<div class="col-md-1"></div>
 	</div>
+
+	<!-- ==================
+   BATTLESHIP
+   ================== -->
+	<div class="row">
+	<div class="col-md-1"></div>
+
+		<div class="col-md-5">
+			<div class="battleship-img-container">
+				<!-- <h1 class="projects-title">PROJECTS</h1> -->
+				<%= image_tag("projects/battleship_2.png", class: 'battleship-img') %>
+			</div>
+		</div>
+
+		<div class="col-md-5 battleship-content">
+			<h2 class="battleship">Battleship Clone</h2>
+			<h4>[ 3 days | Team of 4 ]</h4>
+			<p>A digital remake of the classic board game with added network support. Two individuals are able to select the placement of their ships and trade shots with their opponent until all one player's ships have all been sunk. On the completion of a game, a variety of stats are displayed to each user summarizing their gameplay (e.g. number of shots fired, number of misses, etc.). </p>
+			<p><span class="project-labels">Personal focus:</span> Frontend & backend support for user stats and asynchronous request capabilities.<p>
+			<p><span class="project-labels">Tech:</span> Ruby, Rails, JavaScript, JQery, AJAX, HTML5</p>
+			<div>
+				<%= link_to "Battleship Clone Repo", "https://github.com/TrRo26/battleship", target: :_blank %>
+			</div>
+		</div>
+
+		<div class="col-md-1"></div>
+
+	</div>
+
+	
+
+
 </div>
