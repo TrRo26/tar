@@ -1,5 +1,36 @@
-<div class="posts">
-	<div>
-		<h1>BLOG POSTS</h1>
-	</div>
+<div class="container">
+  <div class="col-md-1"></div>
+  <div class="col-md-10 posts-grid">
+    
+    <% @posts.each_slice(2) do |posts| %>
+	    <div class="row center-block">
+	    	<% posts.each do |post| %>
+		    	<%= link_to post_path(post) do %>
+		    		<div class="col-md-5 post-container">
+		    			<div class="post-img-container">
+		    				<%= image_tag(post.img_path, class: 'posts-main-img') %>
+		    			</div>
+			    		<div class="post-info-container">
+			    			<div class="post-bg-image-overlay">
+			    				<%= image_tag("posts/00_general/multi_color_wood.jpg", class: 'posts-main-img') %>
+			    			</div>
+			    			<h2 class="index-post-title"><%= post.title %></h2> 
+				        <h3><%= post.sub_title %></h3>
+				      	<!--   <h5><%= post.tags %></h5> -->
+				        <h6 class="meta-author"><span class="glyphicon glyphicon-user"></span> &nbsp; <%= post.author %></h6>
+				        <h6 class="meta-date"><span class="glyphicon glyphicon-time"></span> &nbsp; <%= post.created_at.strftime('%b %d, %Y') %></h6>
+								<!-- <div>
+					        raw(post.body).truncate(three fifty eight)
+					      </div> -->
+					    </div>
+
+		      	</div>
+		      <% end %>	
+		    <% end %>
+	    </div>
+    <% end %>
+
+  </div>
+  <div class="col-md-1"></div>
 </div>
+

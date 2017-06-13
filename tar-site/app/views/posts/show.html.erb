@@ -1,0 +1,13 @@
+<div class="posts-main">
+	<div class="col-md-1"></div>
+
+	<div class="col-md-10 blog-content">
+		<div class="post-main-img"><%= image_tag(@post.img_path) %></div>
+	  <h2 class="text-center"><%= @post.title %></h2>
+	  <h4 class="text-center"><%= @post.sub_title %></h4>
+	  <h5 class="text-center"><%= @post.created_at.strftime('%b %d, %Y') %></h5>
+	  <div><%= raw @post.body %></div>
+	</div>
+
+	<div class="col-md-1"></div>
+</div>	
